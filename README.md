@@ -17,6 +17,8 @@ Can you help us fix some issues and implement missing features?
 	2- there is no error handling, which could lead to unhandled exceptions if the database query fails.
  * No exceptions are being caught in this api, how would you deal with these exceptions?
 
+There is a folder called RentalsClient with an implementation of a simple WPF client to List and Add Movies
+
 
 	## Challenge (Nice to have)
 We need to implement a new feature in the system that supports automatic payment processing. Given the advancements in technology, it is essential to integrate multiple payment providers into our system.
@@ -33,6 +35,7 @@ Here are the specific instructions for this implementation:
     * The system should be designed to allow the addition of more payment providers in the future, ensuring flexibility and scalability.
 * Payment Failure Handling:
     * If the payment method fails during the transaction, the system should prevent the creation of the rental record. In such cases, no rental should be saved to the database.
+
 
 
 
