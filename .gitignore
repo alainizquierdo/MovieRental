@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/MovieRental/bin/Debug/net8.0
+/RentalsClient/.vs/RentalsClient
+/RentalsClient/RentalsClient/bin/Debug/net8.0-windows
