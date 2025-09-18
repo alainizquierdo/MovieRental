@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MovieRental.Data;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovieRental.Rental
@@ -17,5 +18,11 @@ namespace MovieRental.Rental
 
 		// TODO: we should have a table for the customers
 		public string CustomerName { get; set; }
-	}
+
+        public Customer? Customer { get; set; }
+
+        [ForeignKey("Customer")]
+        public int CustomerId { get; set; }
+
+    }
 }

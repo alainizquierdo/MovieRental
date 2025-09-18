@@ -23,5 +23,12 @@ namespace MovieRental.Controllers
 	        return Ok(_features.Save(rental));
         }
 
-	}
+        [HttpGet("{customerName}")]
+        public IActionResult Get(string customerName)
+        {
+            return Ok(_features.GetRentalsByCustomerName(customerName));
+        }
+
+
+    }
 }

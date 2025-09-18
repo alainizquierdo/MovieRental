@@ -17,8 +17,12 @@ namespace MovieRental.Movie
 			return movie;
 		}
 
-		// TODO: tell us what is wrong in this method? Forget about the async, what other concerns do you have?
-		public List<Movie> GetAll()
+        // TODO: tell us what is wrong in this method? Forget about the async, what other concerns do you have?
+        /*
+		 There is no Filtering or Pagination, which could lead to performance issues if the dataset is large especially without the use of asnotracking.
+		there is no error handling, which could lead to unhandled exceptions if the database query fails.
+		 */
+        public List<Movie> GetAll()
 		{
 			return _movieRentalDb.Movies.ToList();
 		}
