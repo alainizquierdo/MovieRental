@@ -53,7 +53,7 @@ namespace RentalsClient {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RentalsClient;V1.0.0.0;component/insertmovie.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RentalsClient;component/insertmovie.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\InsertMovie.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
