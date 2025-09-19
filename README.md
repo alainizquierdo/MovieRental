@@ -7,6 +7,9 @@ Can you help us fix some issues and implement missing features?
    
   	1- the DI container does not support injecting scoped services into singletons.
  * The rental class has a method to save, but it is not async, can you make it async and explain to us what is the difference?
+   
+   1- The difference is that a thread is released and it can serve another request, thus improving scalability and responsiveness.
+   
  * Please finish the method to filter rentals by customer name, and add the new endpoint.
  * We noticed we do not have a table for customers, it is not good to have just the customer name in the rental.
    Can you help us add a new entity for this? Don't forget to change the customer name field to a foreign key, and fix your previous method!
@@ -15,7 +18,10 @@ Can you help us fix some issues and implement missing features?
   	1- There is no Filtering or Pagination, which could lead to performance issues if the dataset is large especially without the use of asnotracking.
    
 	2- there is no error handling, which could lead to unhandled exceptions if the database query fails.
+   
  * No exceptions are being caught in this api, how would you deal with these exceptions?
+
+   1- i like to implement an exception filter at the top level and exception handling on any I/O operation on my APIs
 
 There is a folder called RentalsClient with an implementation of a simple WPF client to List and Add Movies
 
@@ -35,6 +41,7 @@ Here are the specific instructions for this implementation:
     * The system should be designed to allow the addition of more payment providers in the future, ensuring flexibility and scalability.
 * Payment Failure Handling:
     * If the payment method fails during the transaction, the system should prevent the creation of the rental record. In such cases, no rental should be saved to the database.
+
 
 
 
